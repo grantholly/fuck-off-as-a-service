@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Greeting Controller {
+public class GreetingController {
     public static final String template = "Fuck off, %s!";
     public final AtomicLong counter = new AtomicLong();
 
