@@ -1,0 +1,10 @@
+---
+
+spring:
+  profiles: 'dev'
+
+config:
+  config_value: 'start'
+  another_value: 'end'
+
+---
