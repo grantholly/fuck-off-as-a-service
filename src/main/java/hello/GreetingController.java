@@ -2,11 +2,16 @@ package hello;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 
 @RestController
 public class GreetingController {
+
+    @Value("${config.config_value}")
+    public String config_value;
+
     public static final String template = "Fuck off, %s!";
     public final AtomicLong counter = new AtomicLong();
 
